@@ -1,141 +1,148 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="css/estilos.css" />
         <meta charset="utf-8" />
-        <title>2cShop</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+       <title>Artistobra-inicio</title>
     </head>
 
     <body>
-        
         <header>
-            <h1>2cShop</h1>
-
-            <nav id>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Support</a></li>
-                    <li><a href="">View Cart</a></li>
-                </ul>
-            </nav>
-
-            <section>
-                <h2>Tee Central - Home of the Cheap Cheap Tees</h2>
-                
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi.
-                </p>
+            <section id="logoHeader">
+                <img src ="images/logo.png" alt="logo Artistobra">
+                <h1>Artistobra</h1>
             </section>
+            
+            <!--Barra de búsqueda e iconos login y carrito compra de momento son imágenes -->
+            <section id="headerDer">
+                <img class="headerImg" src="images/busqueda.png" alt="barra búsqueda" />
+                <img class="headerImg" src="images/Login.png" alt="login" /></a>
+                <img class="headerImg" src="images/carrito_compra.png" alt="carrito compra" /></a>
+            </section>
+            
         </header>
-
         
-        <aside>
-            <section>
-                <h4>Shop by Category</h4>
-                    
-                <ul>
-                    <li><a href="">T-Shirts</a></li>
-                    <li><a href="">Tanks</a></li>
-                    <li><a href="">Dress T-Shirts</a></li>
-                    <li><a href="">Sweaters</a></li>
-                    <li><a href="">Swimwear</a></li>
-                    <li><a href="">Activewear</a></li>
-                    <li><a href="">Workwear</a></li>
-                    <li><a href="">Jeans</a></li>
-                    <li><a href="">Shoes</a></li>
-                    <li><a href="">Accesories</a></li>
-                </ul>
-            </section>
+        <nav> 
+            <!-- nav responsive -->
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
             
-            <section>
-                <h4>Shop by Category</h4>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Tienda</a>
+                    <!-- start nav desplegable -->
                     <ul>
-                        <li><a href="">Twitter</a></li>
-                        <li><a href="">Facebook</a></li>
-                        <li><a href="">Google Buzz</a></li>
+                        <li><a href="#">Todo</a></li>
+                        <li><a href="#">Cómics</a></li>
+                        <li><a href="#">Pósters</a></li>
+                        <li><a href="#">Cuadros</a></li>
+                        <li><a href="#">Prints</a></li>
                     </ul>
-            </section>
-               
-            <section>
-                <h4>Recent Articles</h4>
-                <ul>
-                    <li><a href="">How to ensure the best fit</a></li>
-                    <li><a href="">This year's hot colors</a></li>
-                </ul>
-            </section>
+                    <!-- end nav desplegable -->
+                </li>
 
-        </aside>
+                <li><a href="#">Artistas</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>  
         
-
-        <section id="main">
-
-            <section id="features">
-
-                <h3>Featured Tees >> The Season's Hottest</h3>
-                
-                <article>
-                    <img src="images/hotPink.png" alt="Camiseta rosa">
-                    <a href="">Hot Pink Pocket Tee</a>
-                    <p>$4.99</p>
-                    <p>Sizes: S/M/L/XXL</p>
-                    <img src="images/buyNow.png" alt="Botón buy now">
-                </article>
-                
-                <article>
-                    <img src="images/purple.png" alt="Camiseta rosa">
-                    <a href="">Hot Pink Pocket Tee</a>
-                    <p>$4.99</p>
-                    <p>Sizes: S/M/L/XXL</p>
-                    <img src="images/buyNow.png" alt="Botón buy now">
-                </article>
-
-                <article>
-                    <img src="images/mustard.png" alt="Camiseta rosa">
-                    <a href="">Hot Pink Pocket Tee</a>
-                    <p>$4.99</p>
-                    <p>Sizes: S/M/L/XXL</p>
-                    <img src="images/buyNow.png" alt="Botón buy now">
-                </article>
-
-                <article>
-                    <img src="images/mint.png" alt="Camiseta rosa">
-                    <a href="">Hot Pink Pocket Tee</a>
-                    <p>$4.99</p>
-                    <p>Sizes: S/M/L/XXL</p>
-                    <img src="images/buyNow.png" alt="Botón buy now">
-                </article>
-
-            </section>
-                
+        <section id = "main">
             
-            <section id="more">
-                <h3>More Information About Our Awesome Tees</h3>
-                <p>All our tees come pre-washed and pre-shrunk to ensure a perfect fit.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, integer nec
-                    odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
-                    quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
-                    mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
-                    Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad
-                    litora torquent per conubia nostra, per inceptos himenaeos. Curabitur
-                    sodales ligula in libero. Sed dignissim lacinia nunc.</p>
-    
-                <img id="carrito" src="images/cart.png" alt="Carrito de compra">
-    
-                <img id="payment" src="images/paymentMethods.png" alt="Métodos de compra">
+            <section id="bienvenida">
+                <h2>Una gran selección en Artistobra</h2>
+                <h3>Elige tu arte</h3>
+                <img src="images/bienvenida.png" alt="Imagen inicio" />
             </section>
-        
+            
+            <section id="tienda">
+                <h2>Tienda</h2>
+                <!--Los productos de momento son una imagen-->
+                <img src="images/productos.png" alt="imagen productos"/>
+            </section>
+            
+            <section id="artistas">
+                <h2>Artistas</h2>
+                <p>En Artistobra creemos en la excelencia y el talento de nuestros artistas, tanto si son grandes y con una amplia comunidad de seguidores como si están dando sus primeros pasos para darse a conocer.</p>
+                <p>Visita nuestra sección de artistas para conocer sus trayectorias y seguirlos en redes sociales, ¡incluso podrás contactarlos para realizar un pedido personalizado!</p>
+                <!--Fotos de los artistas irán a un ancla de la página de artistas-->
+                
+                <!--Sección para los artistas que salen arriba-->
+                <section>
+                    <section class="artista">
+                        <a href=" "><img src="images/Bakshi.png" alt="Samantha Bakshi"/></a>
+                        <section class="artistaText">
+                            <p>Samantha Bakshi</p>
+                            <p>Cuadros</p>
+                        </section>
+                    </section>
+                    
+                    <section class="artista">
+                        <a href=" "><img src="images/Gray.png" alt="Paula Gray"/></a>
+                        <section>
+                            <p>Paula Gray</p>
+                            <p>Prints</p>
+                        </section>
+                    </section>
+                </section>
+                
+                <!--Sección para los artistas que salen abajo-->
+                <section>   
+                    <section class="artista">
+                        <a href=" "><img src="images/Sato.png" alt="Raiha Sato"/></a>
+                        <a href = " "></a>
+                        <section>
+                            <p>Raiha Sato</p>
+                            <p>Cómics</p>
+                        </section>
+                    </section>
+                    
+                    <section class="artista">
+                        <a href=" "><img src="images/Mason.png" alt="Tyrone Mason"/></a>
+                        <section>
+                            <p>Tyrone Mason</p>
+                            <p>Pósters</p>
+                        </section>
+                    </section>
+                </section> 
+            </section>
+    
+            <article id="sobre">
+                <section id = sobreTexto>
+                    <h2>Sobre Artistobra</h2>
+                    <p>Artistobra es una tienda online dedicada a comerciar obras de artistas tanto grandes como pequeños. Nuestros objetivos principales son la selección de una amplia variedad de obras y la busqueda de un nicho inexplorado en el mercado del arte online.</p>
+                    <p>Actualmente, contamos con un amplio catálogo de cuadros, cómics, prints y pósters de la mejor calidad, asegurando para nuestros clientes pagos seguros, envíos rápidos y un excelente servicio al cliente. </p>
+                </section>
+                <img src="images/inicio_sobre.png" alt="Imagen sobre" />
+            </article>
+
         </section>
+        
 
         <footer>
-                <section>
-                    <p>© 2018</p>
-                    <a href="">yoursite.com</a>
-                </section>
+            <!--Formulario de momento es una imagen-->
+            <img id="formulario" src="images/formulario.PNG" alt="formulario" >
+
+            <section id="logoFooter">
+                <img src="images/logoFoot.png" alt="imagen logo Artistobra">
+                <h4>Artistobra</h4>
+            </section>
+           
+            <section id="redesSociales">
+                <a href=" "><img src="images/facebook.png" /></a>
+                <a href=" "><img src="images/twitter.png" /></a>
+                <a href=" "><img src="images/instagram.png" /></a>
+                <a href=" "><img src="images/tiktok.png" /></a>
+            </section>
+            
+            <p>©2022 por Artistobra</p>
         </footer>
-    
     </body>
+</html>
