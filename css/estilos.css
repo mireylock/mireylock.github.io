@@ -448,8 +448,7 @@ footer p {
     nav ul{
         top: 190px; 
         padding: 10% 0;
-        height: 70%;
-        border: 5px solid red;
+        height: 100%;
     }
 
     nav ul li{
