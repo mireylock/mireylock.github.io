@@ -325,31 +325,6 @@ footer p {
     }
 }
 
-/* Pone el header en bloque y el logo más pequeño */
-@media (max-width: 1300px){
-    #logoHeader, #headerDer {
-        display: block;
-        text-align: center;
-    }
-
-    #logoHeader img {
-        width: 120px;
-    }
-
-    h1 {
-        font-size: 40px;
-    }
-
-    #headerDer {
-        padding-top: 2%;
-        float: none;
-    }
-
-    h2 {
-        font-size: 30px;
-    }
-}
-
 /* Desaparece el nav horizontal y aparece el nav responsive */
 @media (max-width: 1530px){
     .checkbtn{
@@ -363,7 +338,7 @@ footer p {
     nav ul{
         position: fixed;
         width: 100%;
-        height: 70vh;
+        height: 60%;
         padding: 0;
         background: #6a1a2f;
         top: 300px; 
@@ -392,7 +367,37 @@ footer p {
     }
 }
 
-@media screen and (max-width:1500px){
+/* Pone el header en bloque y el logo más pequeño */
+@media (max-width: 1300px){
+    header {
+        text-align: center;
+    }
+
+    #logoHeader, #headerDer {
+        display: block;
+    }
+
+    #logoHeader img {
+        width: 120px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    #headerDer {
+        padding-top: 2%;
+        float: none;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
+
+
+/* Reduce el borde de #sobre */
+@media screen and (max-width:1550px){
     #sobre {
         border-left: 100px solid  #edb2c2;
         border-right: 100px solid  #edb2c2;
@@ -403,19 +408,20 @@ footer p {
     }
 }
 
+@media screen and (max-width:990px){
+    #sobre h2 {
+        font-size: 25px;
+    }
+    #sobre p {
+        border: 5px solid red;
+        font-size: 13px;
+    }
+}
+
 /*** MÓVIL ***/
 @media screen and (max-width:700px){
     header {
         height: 110px;
-    }
-
-    #logoHeader, #headerDer {
-        display: block;
-        text-align: center;
-    }
-
-    #headerDer {
-        float: none;
     }
 
     #logoHeader img {
@@ -442,6 +448,8 @@ footer p {
     nav ul{
         top: 190px; 
         padding: 10% 0;
+        height: 70%;
+        border: 5px solid red;
     }
 
     nav ul li{
@@ -450,5 +458,18 @@ footer p {
 
     nav ul li a{
         font-size: 20px;
+    }
+
+    #sobre {
+        border-left: 30px solid  #edb2c2;
+        border-right: 30px solid  #edb2c2;
+    }
+
+    #sobre h2 {
+        font-size: 15px;
+    }
+
+    #sobre img {
+        vertical-align: center;
     }
 }
