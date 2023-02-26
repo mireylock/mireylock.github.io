@@ -205,126 +205,6 @@ nav ul li:hover > ul li:hover a {
     display: none;
 }
 
-/*** RESPONSIVE ****/
-/* Hace más pequeña la letra de los enlaces del nav para que siga cabiendo */
-@media (max-width: 1710px){
-    nav ul li a{
-        font-size: 16px;
-    }
-}
-
-/* Pone el header en bloque y el logo más pequeño */
-@media (max-width: 1300px){
-    #logoHeader, #headerDer {
-        display: block;
-        text-align: center;
-    }
-
-    #logoHeader img {
-        width: 120px;
-    }
-
-    h1 {
-        font-size: 40px;
-    }
-
-    #headerDer {
-        padding-top: 2%;
-        float: none;
-    }
-}
-
-/* Desaparece el nav horizontal y aparece el nav responsive */
-@media (max-width: 1530px){
-    .checkbtn{
-        display: block;
-    }
-
-    nav {
-        height: 100px;     
-    }
-
-    nav ul{
-        position: fixed;
-        width: 100%;
-        height: 70vh;
-        padding: 0;
-        background: #6a1a2f;
-        top: 300px; 
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-        z-index: 1;
-    }
-    nav ul li{
-        display: block;
-        margin: 15px 0;
-        width: 100%;
-        line-height: 20px;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-
-    #check:checked ~ ul{
-        left:0;
-    }
-
-    /* ocultar desplegable */
-    nav ul li ul {
-        visibility: hidden;
-    }
-}
-
-/*** MÓVIL ***/
-@media screen and (max-width:600px){
-    header {
-        height: 110px;
-    }
-
-    #logoHeader, #headerDer {
-        display: block;
-        text-align: center;
-    }
-
-    #headerDer {
-        float: none;
-    }
-
-    #logoHeader img {
-        width:75px;
-    }
-
-    h1 {
-        font-size: 25px;
-    }
-
-    #headerDer input[type=text] {
-        padding: 6px;
-        font-size: 10px;
-    }
-
-    #headerDer img {
-        width: 50px;
-    }
-
-    nav {
-        height: 80px;    
-    }
-
-    nav ul{
-        top: 190px; 
-        padding: 10% 0;
-    }
-
-    nav ul li{
-        margin: 10px 0;
-    }
-
-    nav ul li a{
-        font-size: 20px;
-    }
-}
 
 /*** BIENVENIDA ***/
 #bienvenida img {
@@ -435,4 +315,140 @@ footer {
 
 footer p {
     padding: 3%;
+}
+
+/*** RESPONSIVE ****/
+/* Hace más pequeña la letra de los enlaces del nav para que siga cabiendo */
+@media (max-width: 1710px){
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+/* Pone el header en bloque y el logo más pequeño */
+@media (max-width: 1300px){
+    #logoHeader, #headerDer {
+        display: block;
+        text-align: center;
+    }
+
+    #logoHeader img {
+        width: 120px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    #headerDer {
+        padding-top: 2%;
+        float: none;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
+
+/* Desaparece el nav horizontal y aparece el nav responsive */
+@media (max-width: 1530px){
+    .checkbtn{
+        display: block;
+    }
+
+    nav {
+        height: 100px;     
+    }
+
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 70vh;
+        padding: 0;
+        background: #6a1a2f;
+        top: 300px; 
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+    nav ul li{
+        display: block;
+        margin: 15px 0;
+        width: 100%;
+        line-height: 20px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    #check:checked ~ ul{
+        left:0;
+    }
+
+    /* ocultar desplegable */
+    nav ul li ul {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width:1500px){
+    #sobre {
+        border-left: 100px solid  #edb2c2;
+        border-right: 100px solid  #edb2c2;
+    }
+
+    #formulario {
+        width: 300px;
+    }
+}
+
+/*** MÓVIL ***/
+@media screen and (max-width:600px){
+    header {
+        height: 110px;
+    }
+
+    #logoHeader, #headerDer {
+        display: block;
+        text-align: center;
+    }
+
+    #headerDer {
+        float: none;
+    }
+
+    #logoHeader img {
+        width:75px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    #headerDer input[type=text] {
+        padding: 6px;
+        font-size: 10px;
+    }
+
+    #headerDer img {
+        width: 50px;
+    }
+
+    nav {
+        height: 80px;    
+    }
+
+    nav ul{
+        top: 190px; 
+        padding: 10% 0;
+    }
+
+    nav ul li{
+        margin: 10px 0;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
 }
