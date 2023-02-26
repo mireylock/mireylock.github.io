@@ -54,7 +54,6 @@ a {
     src: url(../fonts/Questrial-Regular.ttf);
 }
 
-
 /*https://fonts.google.com/?preview.text=UNA%20GRAN%20SELECCI%C3%93N%20EN%20ARTISTOBRA&preview.text_type=custom&category=Display */
 
 h1 {
@@ -90,34 +89,17 @@ p
 /*** PROPIEDADES POR SECCIÓN LÓGICA ***/
 
 /*** HEADER ***/
-@media screen and (max-width:900px){
-    /*De 900px a 500px se adapta a la pantalla*/
-    header {
-        /*Adaptar el header para que se vean las imágenes centradas*/
-        background-position: center;
-    }
-}
-
 header {
     height: 200px;
     width: 100%;
-    padding: 3% 0;
+    padding: 3% 10%;
 }
 
 #logoHeader, #headerDer {
     display: inline-block;
 }
 
-#logoHeader {
-    padding-left: 10%;
-}
-
-#headerDer {
-    float: right;
-    padding-right: 10%;
-}
-
-#logoHeader img {
+header img {
     vertical-align: middle;
 }
 
@@ -126,8 +108,16 @@ header {
 }
 
 
+#headerDer {
+    float: right;
+}
 
 
+#headerDer input[type=text] {
+    padding: 6px;
+    margin-right: 16px;
+    font-size: 17px;
+}
 
 /*** NAV ***/
 /*** Nav sin desplegar ***/
@@ -215,17 +205,36 @@ nav ul li:hover > ul li:hover a {
     display: none;
 }
 
-/* Hace más pequeña la imagen y el logo */
+/*** RESPONSIVE ****/
+/* Hace más pequeña la letra de los enlaces del nav para que siga cabiendo */
 @media (max-width: 1710px){
-    header h1{
-        padding-left: 20px;
-    }
     nav ul li a{
         font-size: 16px;
     }
 }
 
+/* Pone el header en bloque y el logo más pequeño */
+@media (max-width: 1300px){
+    #logoHeader, #headerDer {
+        display: block;
+        text-align: center;
+    }
 
+    #logoHeader img {
+        width: 120px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    #headerDer {
+        padding-top: 2%;
+        float: none;
+    }
+}
+
+/* Desaparece el nav horizontal y aparece el nav responsive */
 @media (max-width: 1530px){
     .checkbtn{
         display: block;
@@ -235,10 +244,11 @@ nav ul li:hover > ul li:hover a {
         height: 100px;     
     }
 
-    ul{
+    nav ul{
         position: fixed;
         width: 100%;
-        height: 100vh;
+        height: 70vh;
+        padding: 0;
         background: #6a1a2f;
         top: 300px; 
         left: -100%;
@@ -248,9 +258,9 @@ nav ul li:hover > ul li:hover a {
     }
     nav ul li{
         display: block;
-        margin: 30px 0;
+        margin: 15px 0;
         width: 100%;
-        line-height: 30px;
+        line-height: 20px;
     }
     nav ul li a{
         font-size: 20px;
@@ -266,6 +276,55 @@ nav ul li:hover > ul li:hover a {
     }
 }
 
+/*** MÓVIL ***/
+@media screen and (max-width:600px){
+    header {
+        height: 110px;
+    }
+
+    #logoHeader, #headerDer {
+        display: block;
+        text-align: center;
+    }
+
+    #headerDer {
+        float: none;
+    }
+
+    #logoHeader img {
+        width:75px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    #headerDer input[type=text] {
+        padding: 6px;
+        font-size: 10px;
+    }
+
+    #headerDer img {
+        width: 50px;
+    }
+
+    nav {
+        height: 80px;    
+    }
+
+    nav ul{
+        top: 190px; 
+        padding: 10% 0;
+    }
+
+    nav ul li{
+        margin: 10px 0;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+}
 
 /*** BIENVENIDA ***/
 #bienvenida img {
