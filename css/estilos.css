@@ -1,17 +1,19 @@
-/*** Reseteo inicial de propiedades ***/
+/*** RESETEO INICIAL DE PROPIEDADES ***/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/***************************/
 /*** PROPIEDADES COMUNES ***/
-/*Centrar todas las secciones lógicas*/
+/***************************/
+/* CENTRAR SECCIONES LÓGICAS*/
 #bienvenida, #tienda, #artistas,  #sobre, #footer {
     text-align: center;
 }
 
-/*Fondos de cada sección lógica*/
+/* FONDOS DE SECCIONES LÓGOCAS */
 #bienvenida, #artistas, #sobre {
     background-color: white;
 }
@@ -24,7 +26,7 @@ nav, #tienda, footer {
     padding-block-end: 5%;
 }
 
-/*Formatear enlaces, encabezados y párrafos*/
+/* FORMATEO DE ENLACES */
 ul {
     list-style-type: none;
 }
@@ -33,7 +35,8 @@ a {
     text-decoration: none;
 }
 
-/* Añadir fuentes */
+/* FUENTES */
+/*https://fonts.google.com/?preview.text=UNA%20GRAN%20SELECCI%C3%93N%20EN%20ARTISTOBRA&preview.text_type=custom&category=Display */
 @font-face {
     font-family: cinzelDecorative;
     src: url(../fonts/CinzelDecorative-Bold.ttf);
@@ -54,7 +57,11 @@ a {
     src: url(../fonts/Questrial-Regular.ttf);
 }
 
-/*https://fonts.google.com/?preview.text=UNA%20GRAN%20SELECCI%C3%93N%20EN%20ARTISTOBRA&preview.text_type=custom&category=Display */
+@font-face {
+    font-family: homemadeApple;
+    src: url(../fonts/HomemadeApple-Regular.ttf);
+}
+
 
 h1 {
     font-family: cinzelDecorative;
@@ -70,8 +77,8 @@ h2 {
 }
 
 h3 {
-    padding: 3% 0;
-    font-family: elMessiriBold;
+    padding-bottom: 3%;
+    font-family: homemadeApple;
     font-size: 30px;
 }
 
@@ -84,11 +91,17 @@ h4 {
 p
 {
     font-family: questrial;
+    color: #000000;
 }
 
-/*** PROPIEDADES POR SECCIÓN LÓGICA ***/
 
-/*** HEADER ***/
+/***************************************/
+/*** PROPIEDADES POR SECCIÓN LÓGICA ***/
+/**************************************/
+
+/**************************************/
+/************** HEADER ****************/
+/**************************************/
 header {
     height: 200px;
     width: 100%;
@@ -112,15 +125,18 @@ header img {
     float: right;
 }
 
-
+/* Barra de búsqueda */
 #headerDer input[type=text] {
     padding: 6px;
     margin-right: 16px;
     font-size: 17px;
 }
 
-/*** NAV ***/
-/*** Nav sin desplegar ***/
+/**************************************/
+/************** NAV *******************/
+/**************************************/
+
+/********** NAV HORIZONTAL *************/
 nav {
     font-family: elMessiriBold;
     font-size: 20px;
@@ -160,7 +176,7 @@ nav ul li:hover a {
     color: #6a1a2f;
 }
 
-/*** Nav desplegable ***/
+/********** NAV DESPLEGABLE *************/
 nav ul ul {
     display:none;
     position:absolute;
@@ -190,7 +206,7 @@ nav ul li:hover > ul li:hover a {
     color:#6a1a2f;
 }
 
-/*** Nav responsive ***/
+/********** NAV RESPONSIVE *************/
 .checkbtn{
     font-size: 30px;
     color: #fff;
@@ -205,18 +221,23 @@ nav ul li:hover > ul li:hover a {
     display: none;
 }
 
-
-/*** BIENVENIDA ***/
+/**************************************/
+/************* BIENVENIDA *************/
+/**************************************/
 #bienvenida img {
     width: 60%;
 }
 
-/*** TIENDA ***/
+/**************************************/
+/************** TIENDA ****************/
+/**************************************/
 #tienda img {
     width: 70%;
 }
 
-/*** ARTISTAS ***/
+/**************************************/
+/************ ARTISTAS ****************/
+/**************************************/
 #artistas > p {
     margin: 0 15%;
     line-height: 30px;
@@ -233,7 +254,6 @@ nav ul li:hover > ul li:hover a {
 }
 
 /*Imágenes de artistas y su descripción*/
-
 .artista {
     position: relative;
     display: inline-block;
@@ -252,7 +272,9 @@ nav ul li:hover > ul li:hover a {
     background-color: white;
 }
 
-/*** SOBRE ***/
+/**************************************/
+/************** SOBRE *****************/
+/**************************************/
 #sobre {
     border-left: 250px solid  #edb2c2;
     border-right: 250px solid  #edb2c2;
@@ -281,7 +303,9 @@ nav ul li:hover > ul li:hover a {
 }
 
 
-/*** FOOTER ***/
+/**************************************/
+/************** FOOTER ****************/
+/**************************************/
 footer {
     clear: left;
     padding-block-start: 5%;
@@ -317,11 +341,21 @@ footer p {
     padding: 3%;
 }
 
-/*** RESPONSIVE ****/
+/**************************************/
+/************ RESPONSIVE **************/
+/**************************************/
 /* Hace más pequeña la letra de los enlaces del nav para que siga cabiendo */
 @media (max-width: 1710px){
     nav ul li a{
         font-size: 16px;
+    }
+}
+
+/* Reduce el borde de #sobre */
+@media screen and (max-width:1550px){
+    #sobre {
+        border-left: 100px solid  #edb2c2;
+        border-right: 100px solid  #edb2c2;
     }
 }
 
@@ -338,7 +372,7 @@ footer p {
     nav ul{
         position: fixed;
         width: 100%;
-        height: 60%;
+        height: 100%;
         padding: 0;
         background: #6a1a2f;
         top: 300px; 
@@ -347,14 +381,21 @@ footer p {
         transition: all .5s;
         z-index: 1;
     }
+
     nav ul li{
         display: block;
-        margin: 15px 0;
+        margin: 20px 0;
         width: 100%;
         line-height: 20px;
     }
+
     nav ul li a{
         font-size: 20px;
+    }
+
+    nav ul li a.active {
+        color: #6a1a2f;
+        background-color: white;
     }
 
     #check:checked ~ ul{
@@ -367,7 +408,7 @@ footer p {
     }
 }
 
-/* Pone el header en bloque y el logo más pequeño */
+/* Pone el header en bloque y el logo y los hs más pequeño */
 @media (max-width: 1300px){
     header {
         text-align: center;
@@ -393,32 +434,29 @@ footer p {
     h2 {
         font-size: 30px;
     }
-}
 
-
-/* Reduce el borde de #sobre */
-@media screen and (max-width:1550px){
-    #sobre {
-        border-left: 100px solid  #edb2c2;
-        border-right: 100px solid  #edb2c2;
-    }
-
-    #formulario {
-        width: 300px;
+    h3 {
+        font-size: 20px;
     }
 }
 
+
+/* Redimensiona #sobre */
 @media screen and (max-width:990px){
     #sobre h2 {
         font-size: 25px;
     }
     #sobre p {
-        border: 5px solid red;
         font-size: 13px;
+    }
+
+    /* reduce el formulario porque de momento es una foto */
+    #formulario {
+        width: 300px;
     }
 }
 
-/*** MÓVIL ***/
+/* Redimensiona la página para anchura de móvil */
 @media screen and (max-width:700px){
     header {
         height: 110px;
@@ -447,16 +485,23 @@ footer p {
 
     nav ul{
         top: 190px; 
-        padding: 10% 0;
         height: 100%;
     }
 
-    nav ul li{
-        margin: 10px 0;
+    nav ul li a{
+        font-size: 16px;
     }
 
-    nav ul li a{
-        font-size: 20px;
+    h2 {
+        font-size: 19px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 13px;
     }
 
     #sobre {
@@ -466,9 +511,5 @@ footer p {
 
     #sobre h2 {
         font-size: 15px;
-    }
-
-    #sobre img {
-        vertical-align: center;
     }
 }
