@@ -480,6 +480,14 @@ footer p {
     }
 }
 
+/* Redimensiona artistas */
+@media screen and (max-width: 500px){
+    .artista img {
+        width: 250px;
+        height: auto;
+    }
+}
+
 /* Redimensiona #sobre */
 @media screen and (max-width:990px){
     #sobre h2 {
