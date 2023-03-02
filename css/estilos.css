@@ -238,22 +238,22 @@ nav ul li:hover > ul li:hover a {
 /**************************************/
 /************ ARTISTAS ****************/
 /**************************************/
-#artistas > p {
+/* márgenes del h2 y el texto introductorio */
+#artistas h2, #artistas > p {
     margin: 0 15%;
+}
+
+/* párrafo introductorio */
+#artistas > p {
     line-height: 30px;
     padding-bottom: 30px;
 }
 
-.artista p {
-    font-family: julee;
-    font-size: 20px;
-}
-
-#artistas img {
+/* para cada artista */
+.artista img {
     height: 400px;
 }
 
-/*Imágenes de artistas y su descripción*/
 .artista {
     position: relative;
     display: inline-block;
@@ -270,6 +270,12 @@ nav ul li:hover > ul li:hover a {
     padding: 5%;
     font-size: 15px;
     background-color: white;
+}
+
+/* formateo de texto de la descripción de cada artista */
+.artista p {
+    font-family: julee;
+    font-size: 20px;
 }
 
 /**************************************/
@@ -344,8 +350,15 @@ footer p {
 /**************************************/
 /************ RESPONSIVE **************/
 /**************************************/
-/* Hace más pequeña la letra de los enlaces del nav para que siga cabiendo */
-@media (max-width: 1710px){
+/* Reduce padding del header y tamaño de letra de los elementos del nav */
+@media (max-width: 1735px){
+    header {
+        padding: 3% 3%;
+    }
+    
+    nav ul {
+        padding: 50px 3%;
+    }
     nav ul li a{
         font-size: 16px;
     }
@@ -359,8 +372,72 @@ footer p {
     }
 }
 
+/* Pone #sobre en bloque cuando no caben una al lado de otra */
+@media screen and (max-width: 893px)
+{
+    #sobreTexto, #sobre img  {
+        float: none;
+        width: 100%;
+        display: inline-block;
+    }
+
+    #sobre img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:800px) {
+ 
+
+    
+}
+
+/* Reduce más el padding del nav y tamaño de letra de sus elementos */
+@media (max-width: 1250px)
+{
+    nav ul {
+        padding: 50px 1%;
+    }
+    nav ul li a{
+        font-size: 13px;
+    }
+}
+
+/* Pone el header en bloque y el logo y los hs más pequeño */
+@media (max-width: 1100px){
+    header {
+        text-align: center;
+    }
+
+    #logoHeader, #headerDer {
+        display: block;
+    }
+
+    #logoHeader img {
+        width: 120px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    #headerDer {
+        padding-top: 2%;
+        float: none;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
+
+
 /* Desaparece el nav horizontal y aparece el nav responsive */
-@media (max-width: 1530px){
+@media (max-width: 1005px){
     .checkbtn{
         display: block;
     }
@@ -407,39 +484,6 @@ footer p {
         visibility: hidden;
     }
 }
-
-/* Pone el header en bloque y el logo y los hs más pequeño */
-@media (max-width: 1300px){
-    header {
-        text-align: center;
-    }
-
-    #logoHeader, #headerDer {
-        display: block;
-    }
-
-    #logoHeader img {
-        width: 120px;
-    }
-
-    h1 {
-        font-size: 40px;
-    }
-
-    #headerDer {
-        padding-top: 2%;
-        float: none;
-    }
-
-    h2 {
-        font-size: 30px;
-    }
-
-    h3 {
-        font-size: 20px;
-    }
-}
-
 
 /* Redimensiona #sobre */
 @media screen and (max-width:990px){
@@ -511,5 +555,19 @@ footer p {
 
     #sobre h2 {
         font-size: 15px;
+    }
+}
+
+/* Redimensiona nav responsive para móviles con menos altura */
+@media screen and (max-height:631px)
+{
+    nav ul li{
+        margin: 10px 0;
+        line-height: 10px;
+        height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 13px;
     }
 }
