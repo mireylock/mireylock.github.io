@@ -1,0 +1,193 @@
+/**** RESETEO INICIAL DE PROPIEDADES ****/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**** FUENTES *****/
+@font-face {
+    font-family: cinzelDecorative;
+    src: url(../fonts/CinzelDecorative-Bold.ttf);
+}
+
+@font-face {
+    font-family: elMessiriBold;
+    src: url(../fonts/ElMessiri-Bold.ttf);
+}
+
+@font-face {
+    font-family: questrial;
+    src: url(../fonts/Questrial-Regular.ttf);
+}
+
+
+/**** PROPIEDADES POR SECCIONES LÓGICAS ***/
+body {
+    background-color: #ffff;
+    text-align: center;
+}
+
+/***** HEADER ****/
+header {
+    padding: 5vh;
+}
+
+header a, img {
+    display: inline;
+}
+
+
+header a {
+    font-family: cinzelDecorative;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    vertical-align: middle;
+    width: 70px;
+}
+
+/****** FORMULARIO *******/
+.form {
+    width: 400px;
+    height: auto;
+    background: #6a1a2f;
+    box-shadow: 7px 13px 37px #000;
+    margin: auto;
+    padding: 20px 30px;
+    color: white;
+}
+
+.form legend {
+    margin: 0;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 25px;
+    font-family: elMessiriBold;
+}
+
+/*Campos de introducción de datos*/
+.controls {
+    width: 100%;
+    border: 1px solid #bf778a;
+    margin: 2%;
+    padding: 3%;
+    background: white;
+    font-size: 14px;
+    color: black;
+}
+
+/*Campos de introducción de datos al clicar*/
+.form input:focus {
+    background-color: #ffff;
+    color: #bf778a;
+    outline: none;
+}
+
+
+/* Aspa o check según si son válidos email y/o contraseña o no*/
+#password:focus, #email:focus {
+    background-image: url(../images/cross.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+#password:valid, #email:valid {
+    background-image: url(../images/checked.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+/* Mensajes de error de formato en email y contraseña */
+span {
+    font-family: questrial;
+}
+
+#password-message, #email-message {
+    display: none; 
+}
+
+#password:focus + #password-message, #email:focus + #email-message {
+    display: block;
+    color: white;
+}
+
+#password:valid + #password-message, #email:valid + #email-message {
+    display: none;
+}
+
+
+/* Política de privacidad */
+.form label, .form a {
+    color: #ffff;
+    font-size: 14px;
+    line-height: 3em;
+}
+
+
+.form a:hover {
+    text-decoration: underline;
+    color: #bf778a;
+}
+
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    accent-color: #bf778a;
+}
+
+
+/*Botón de crear cuenta/iniciar sesión*/
+.button {
+    width: 100%;
+    height: 40px;
+    margin: 2%;
+    margin-bottom: 20px;
+    background:#bf778a;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-family: questrial;
+    cursor: pointer;
+
+}
+
+.button:hover {
+    background:#ffff;
+    color: #bf778a;
+}
+
+
+/**** PÁRRAFO VOLVER AL INICIO DE SESIÓN ****/
+p {
+    margin: 4%;
+}
+
+p a {
+    text-decoration: none;
+    color: #6a1a2f;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/**** FOOTER ****/
+footer {
+    padding: 5vh;
+}
+
+small {
+    font-family: questrial;
+}
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--sweet alert-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css" integrity="sha256-aUL5sUzmON2yonFVjFCojGULVNIOaPxlH648oUtA/ng=" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/form.css" />
+
+    <title>Formulario sign-up</title>
+</head>
+<body>
+
+    <header>
+        <img src ="../images/logo.png" alt="logo Artistobra">
+        <a href="../index.html">Artistobra</a></h1>
+    </header>
+   
+    <main> 
+        <form class="form" novalidate>
+            <legend>Crear cuenta</legend>
+            <input class="controls" type="text" id="nombre" placeholder="Nombre" required>
+            <input class="controls" type="text" id="apellidos" placeholder="Apellidos" required>
+            <input class="controls" id="email" type="email" name="correo" value="" placeholder="Correo electrónico" pattern="[a-zA-Z]+@[a-zA-Z]*\.[a-zA-Z]+" required>
+            <span id="email-message">P. ej., ejemplo@email.com</span>
+            <input class="controls" id="password" type="password" name="password" placeholder="Contraseña" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])(?!\s)[a-zA-Z\d#$@!%&*?]{8,16}" title="8-16 caracteres, incluyendo letra minúscula, mayúscula y caracter especial" required>
+            <span id="password-message">De 8 a 16 caracteres que incluyan mínimo una minúscula, mayúscula y carácter especial (#,$,@,!,%,&,*,?)</span>
+            <input class="controls" type="password" name="password" id="pass2" value="" placeholder="Confirme contraseña">
+            <input type="checkbox" class="checkmark" id="private-policy" />
+            <label for="private-policy">He leído y acepto la <a href="../pages/politicaPrivacidad.html">Política de privacidad</a></label>        
+            <input class="button" id="submit-button" type="submit" value="Crear cuenta" onclick="validar();return false;">   
+        </form>
+
+        <p>¿Ya tienes cuenta? <a href="../pages/login.html">Iniciar sesión</a></p>
+    
+    </main>
+    
+    <footer>
+        <small>©2022 Artistobra</small>
+    </footer>
+    
+    <script type="text/javascript" src="../js/sweetalert2.js"></script>
+    <script type="text/javascript" src="../js/signup.js"></script>
+
+</body>
+</html>

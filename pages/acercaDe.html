@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/estilos.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        <title>Artistobra-acerca-de</title>
+    </head>
+
+    <body>
+        <header>
+            <section id="logoHeader">
+                <img src ="../images/logo.png" alt="logo Artistobra">
+                <h1>Artistobra</h1>
+            </section>
+            
+            <section id="headerDer">
+                <input type="search" placeholder="Search..">
+                <a href="../pages/login.html"><img class="headerImg" src="../images/Login.png" alt="login" /></a>
+                <img class="headerImg" src="../images/carrito_compra.png" alt="carrito compra" /></a>
+            </section>
+        </header>
+        
+        <nav> 
+            <!-- nav responsive -->
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <ul>
+                <li><a class="active" href="../index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a>
+                    <!-- start nav desplegable -->
+                    <ul>
+                        <li><a href="../pages/tienda.html">Todo</a></li>
+                        <li><a href="../pages/comics.html">Cómics</a></li>
+                        <li><a href="../pages/posters.html">Pósters</a></li>
+                        <li><a href="../pages/cuadros.html">Cuadros</a></li>
+                        <li><a href="../pages/prints.html">Prints</a></li>
+                    </ul>
+                    <!-- end nav desplegable -->
+                </li>
+
+                <li><a href="../pages/artistas.html">Artistas</a></li>
+                <li><a href="../pages/acercaDe.html">Acerca de</a></li>
+                <li><a href="../pages/faqs.html">Preguntas frecuentes</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>  
+        
+        <main>            
+            <article id="sobre" class="fondoBlanco">
+                <section id="sobreTexto">
+                    <h2>TODO SOBRE NOSOTROS</h2>
+                    <p>Artistobra es una tienda online dedicada a comerciar obras de artistas tanto grandes como pequeños. Nuestros objetivos principales son la selección de una amplia variedad obras y la busqueda de un nicho inexplorado en el mercado del arte online.</p>
+                    <p>Creada en 2022, desde su fundación hemos ido incorporando cada vez más artistas, llegando a formar una amplia comunidad en redes sociales y organizando varias exposiciones y eventos.</p>
+                    <p>Actualmente, nuestra tienda online se compone de un amplio catálogo de cuadros, cómics, prints y pósters de la mejor calidad, asegurando para nuestros clientes pagos seguros, envíos rápidos y un excelente servicio al cliente. </p>
+                </section>
+                <img src="../images/acerca_de.png" alt="Galería de arte">
+            </article>
+        </main>        
+
+        <footer>
+            <section id="logoFooter">
+                <img src="../images/logoFoot.png" alt="imagen logo Artistobra">
+                <h4>Artistobra</h4>
+            </section>
+           
+            <form action="" id="suscripcion">
+                <label class="suscribete" for="">Suscríbete para recibir novedades de nuestros productos</label>
+                <input type="email" name="mail" id="inputMail" placeholder = "P. ej., ejemplo@email.com">
+                <input class="buttons" type="submit" name="" value="Enviar">
+            </form>
+            
+            <section id="redesSociales">
+                <a href="#"><img src="../images/facebook.png" /></a>
+                <a href="#"><img src="../images/twitter.png" /></a>
+                <a href="#"><img src="../images/instagram.png" /></a>
+                <a href="#"><img src="../images/tiktok.png" /></a>
+            </section>
+            <p>©2022 por Artistobra</p>
+        </footer>
+    </body>
+</html>

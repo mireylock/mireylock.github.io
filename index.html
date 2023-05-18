@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8" />
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/estilos.css" />
+        <link rel="stylesheet" href="./css/estilos.css" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-
-       <title>Artistobra-inicio</title>
+        <title>Artistobra-inicio</title>
     </head>
 
     <body>
         <header>
             <section id="logoHeader">
-                <img src ="images/logo.png" alt="logo Artistobra">
+                <img src ="./images/logo.png" alt="logo Artistobra">
                 <h1>Artistobra</h1>
             </section>
             
-            <!--Barra de búsqueda e iconos login y carrito compra de momento son imágenes -->
             <section id="headerDer">
-                <input type="text" placeholder="Search..">
-                <!-- <img class="headerImg" src="images/busqueda.png" alt="barra búsqueda" /> -->
-                <img class="headerImg" src="images/Login.png" alt="login" /></a>
-                <img class="headerImg" src="images/carrito_compra.png" alt="carrito compra" /></a>
+                <input type="search" placeholder="Search..">
+                <a href="./pages/login.html"><img class="headerImg" src="./images/Login.png" alt="login" /></a>
+                <img class="headerImg" src="./images/carrito_compra.png" alt="carrito compra" /></a>
             </section>
         </header>
         
@@ -34,50 +31,71 @@
             </label>
 
             <ul>
-                <li><a class="active" href="#">Inicio</a></li>
-                <li><a href="#">Tienda</a>
+                <li><a class="active" href="./index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a>
                     <!-- start nav desplegable -->
                     <ul>
-                        <li><a href="#">Todo</a></li>
-                        <li><a href="#">Cómics</a></li>
-                        <li><a href="#">Pósters</a></li>
-                        <li><a href="#">Cuadros</a></li>
-                        <li><a href="#">Prints</a></li>
+                        <li><a href="./pages/tienda.html">Todo</a></li>
+                        <li><a href="./pages/comics.html">Cómics</a></li>
+                        <li><a href="./pages/posters.html">Pósters</a></li>
+                        <li><a href="./pages/cuadros.html">Cuadros</a></li>
+                        <li><a href="./pages/prints.html">Prints</a></li>
                     </ul>
                     <!-- end nav desplegable -->
                 </li>
 
-                <li><a href="#">Artistas</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Preguntas frecuentes</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="./pages/artistas.html">Artistas</a></li>
+                <li><a href="./pages/acercaDe.html">Acerca de</a></li>
+                <li><a href="./pages/faqs.html">Preguntas frecuentes</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>  
         
-        <section id = "main">
-            
-            <article id="bienvenida">
+        <main>            
+            <article id="bienvenida" class="fondoBlanco">
                 <h2>Una gran selección en Artistobra</h2>
                 <h3>Elige tu arte</h3>
-                <img src="images/bienvenida.png" alt="Imagen inicio" />
+                <img src="./images/bienvenida.png" alt="Imagen inicio" />
             </article>
             
-            <article id="tienda">
+            <section id="tienda" class="fondoRosa">
                 <h2>Tienda</h2>
-                <!--Los productos de momento son una imagen-->
-                <img src="images/productos.png" alt="imagen productos"/>
-            </article>
+                <section>
+                    <article>
+                        <img src="./images/comic1.png" alt="Comic1">
+                        <p>Comic 1</p>
+                        <p>11,00€</p>
+                    </article>
+    
+                    <article>
+                        <img src="./images/cuadro1.png" alt="Cuadro1">
+                        <p>Cuadro 1</p>
+                        <p>60,00€</p>
+                    </article>
+    
+                    <article>
+                        <img class="scaleDown" src="./images/print1.png" alt="Print1">
+                        <p>Print 1</p>
+                        <p>20,00€</p>
+                    </article>
+    
+                    <article>
+                        <img src="./images/poster1.png" alt="Poster1">
+                        <p>Póster 1</p>
+                        <p>15,00€</p>
+                    </article>
+                </section>
+            </section>
             
-            <article id="artistas">
+            <article id="artistas" class="fondoBlanco">
                 <h2>Artistas</h2>
                 <p>En Artistobra creemos en la excelencia y el talento de nuestros artistas, tanto si son grandes y con una amplia comunidad de seguidores como si están dando sus primeros pasos para darse a conocer.</p>
                 <p>Visita nuestra sección de artistas para conocer sus trayectorias y seguirlos en redes sociales, ¡incluso podrás contactarlos para realizar un pedido personalizado!</p>
-                <!--Fotos de los artistas irán a un ancla de la página de artistas-->
                 
                 <!--Sección para los artistas que salen arriba-->
                 <section>
                     <section class="artista">
-                        <a href=" "><img src="images/Bakshi.png" alt="Samantha Bakshi"/></a>
+                        <a href=" "><img src="./images/Bakshi.png" alt="Samantha Bakshi"/></a>
                         <section class="artistaText">
                             <p>Samantha Bakshi</p>
                             <p>Cuadros</p>
@@ -85,7 +103,7 @@
                     </section>
                     
                     <section class="artista">
-                        <a href=" "><img src="images/Gray.png" alt="Paula Gray"/></a>
+                        <a href=" "><img src="./images/Gray.png" alt="Paula Gray"/></a>
                         <section>
                             <p>Paula Gray</p>
                             <p>Prints</p>
@@ -96,7 +114,7 @@
                 <!--Sección para los artistas que salen abajo-->
                 <section>   
                     <section class="artista">
-                        <a href=" "><img src="images/Sato.png" alt="Raiha Sato"/></a>
+                        <a href=" "><img src="./images/Sato.png" alt="Raiha Sato"/></a>
                         <a href = " "></a>
                         <section>
                             <p>Raiha Sato</p>
@@ -105,7 +123,7 @@
                     </section>
                     
                     <section class="artista">
-                        <a href=" "><img src="images/Mason.png" alt="Tyrone Mason"/></a>
+                        <a href=" "><img src="./images/Mason.png" alt="Tyrone Mason"/></a>
                         <section>
                             <p>Tyrone Mason</p>
                             <p>Pósters</p>
@@ -114,32 +132,34 @@
                 </section> 
             </article>
     
-            <article id="sobre">
+            <article id="sobre" class="fondoBlanco">
                 <section id = sobreTexto>
                     <h2>Sobre Artistobra</h2>
                     <p>Artistobra es una tienda online dedicada a comerciar obras de artistas tanto grandes como pequeños. Nuestros objetivos principales son la selección de una amplia variedad de obras y la busqueda de un nicho inexplorado en el mercado del arte online.</p>
                     <p>Actualmente, contamos con un amplio catálogo de cuadros, cómics, prints y pósters de la mejor calidad, asegurando para nuestros clientes pagos seguros, envíos rápidos y un excelente servicio al cliente. </p>
                 </section>
-                <img src="images/inicio_sobre.png" alt="Imagen sobre" />
+                <img src="./images/inicio_sobre.png" alt="Imagen sobre" />
             </article>
 
-        </section>
-        
+        </main>        
 
         <footer>
-            <!--Formulario de momento es una imagen-->
-            <img id="formulario" src="images/formulario.png" alt="formulario" >
-
             <section id="logoFooter">
-                <img src="images/logoFoot.png" alt="imagen logo Artistobra">
+                <img src="./images/logoFoot.png" alt="imagen logo Artistobra">
                 <h4>Artistobra</h4>
             </section>
            
+            <form action="" id="suscripcion">
+                <label class="suscribete" for="">Suscríbete para recibir novedades de nuestros productos</label>
+                <input type="email" name="mail" id="inputMail" placeholder = "P. ej., ejemplo@email.com">
+                <input class="buttons" type="submit" name="" value="Enviar">
+            </form>
+            
             <section id="redesSociales">
-                <a href="#"><img src="images/facebook.png" /></a>
-                <a href="#"><img src="images/twitter.png" /></a>
-                <a href="#"><img src="images/instagram.png" /></a>
-                <a href="#"><img src="images/tiktok.png" /></a>
+                <a href="#"><img src="./images/facebook.png" /></a>
+                <a href="#"><img src="./images/twitter.png" /></a>
+                <a href="#"><img src="./images/instagram.png" /></a>
+                <a href="#"><img src="./images/tiktok.png" /></a>
             </section>
             
             <p>©2022 por Artistobra</p>

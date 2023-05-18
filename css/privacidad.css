@@ -1,0 +1,21 @@
+/*** RESETEO INICIAL DE PROPIEDADES ***/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    padding-block-end: 5%;
+    text-align: left;
+}
+
+h2 {
+    font-size: 20px;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+main p {
+    padding: 0 20%;
+}

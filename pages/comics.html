@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/estilos.css" />
+        <link rel="stylesheet" href="../css/comics.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        <title>Artistobra-comics</title>
+    </head>
+
+    <body>
+        <header>
+            <section id="logoHeader">
+                <img src ="../images/logo.png" alt="logo Artistobra">
+                <h1>Artistobra</h1>
+            </section>
+            
+            <section id="headerDer">
+                <input type="search" placeholder="Search..">
+                <a href="../pages/login.html"><img class="headerImg" src="../images/Login.png" alt="login" /></a>
+                <img class="headerImg" src="../images/carrito_compra.png" alt="carrito compra" /></a>
+            </section>
+        </header>
+        
+        <nav> 
+            <!-- nav responsive -->
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <ul>
+                <li><a class="active" href="../index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a>
+                    <!-- start nav desplegable -->
+                    <ul>
+                        <li><a href="../pages/tienda.html">Todo</a></li>
+                        <li><a href="../pages/comics.html">Cómics</a></li>
+                        <li><a href="../pages/posters.html">Pósters</a></li>
+                        <li><a href="../pages/cuadros.html">Cuadros</a></li>
+                        <li><a href="../pages/prints.html">Prints</a></li>
+                    </ul>
+                    <!-- end nav desplegable -->
+                </li>
+
+                <li><a href="../pages/artistas.html">Artistas</a></li>
+                <li><a href="../pages/acercaDe.html">Acerca de</a></li>
+                <li><a href="../pages/faqs.html">Preguntas frecuentes</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>  
+
+        <main>
+            <section id="tienda">
+                <h2>CÓMICS</h2>
+                <p>Las mejores historietas para emocionarse y disfrutar nuevas aventuras</p>
+
+                <article>
+                    <img src="../images/comic1.png" alt="Comic1">
+                    <p>Comic 1</p>
+                    <p>11,00€</p>
+                </article>
+                
+                <article>
+                    <img src="../images/comic2.png" alt="Comic2">
+                    <p>Comic 2</p>
+                    <p>7,50€</p>
+                </article>
+                
+                <article>
+                    <img class="scaleDown" src="../images/comic3.png" alt="Comic3">
+                    <p>Comic 3</p>
+                    <p>7,50€</p>
+                </article>
+
+                <article>
+                    <img src="../images/comic4.png" alt="Comic4">
+                    <p>Comic 4</p>
+                    <p>7,50€</p>
+                </article>
+
+            </section>
+            
+        </main>
+        
+        <footer>
+            <section id="logoFooter">
+                <img src="../images/logoFoot.png" alt="imagen logo Artistobra">
+                <h4>Artistobra</h4>
+            </section>
+           
+            <form action="" id="suscripcion">
+                <label class="suscribete" for="">Suscríbete para recibir novedades de nuestros productos</label>
+                <input type="email" name="mail" id="inputMail" placeholder = "P. ej., ejemplo@email.com">
+                <input class="buttons" type="submit" name="" value="Enviar">
+            </form>
+            
+            <section id="redesSociales">
+                <a href="#"><img src="../images/facebook.png" /></a>
+                <a href="#"><img src="../images/twitter.png" /></a>
+                <a href="#"><img src="../images/instagram.png" /></a>
+                <a href="#"><img src="../images/tiktok.png" /></a>
+            </section>
+            <p>©2022 por Artistobra</p>
+        </footer>
+    </body>
+</html>

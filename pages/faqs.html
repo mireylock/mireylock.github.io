@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/estilos.css" />
+        <link rel="stylesheet" href="../css/faqs.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        <title>Artistobra-faqs</title>
+    </head>
+
+    <body>
+        <header>
+            <section id="logoHeader">
+                <img src ="../images/logo.png" alt="logo Artistobra">
+                <h1>Artistobra</h1>
+            </section>
+            
+            <section id="headerDer">
+                <input type="search" placeholder="Search..">
+                <a href="../pages/login.html"><img class="headerImg" src="../images/Login.png" alt="login" /></a>
+                <img class="headerImg" src="../images/carrito_compra.png" alt="carrito compra" /></a>
+            </section>
+        </header>
+        
+        <nav> 
+            <!-- nav responsive -->
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <ul>
+                <li><a class="active" href="../index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a>
+                    <!-- start nav desplegable -->
+                    <ul>
+                        <li><a href="../pages/tienda.html">Todo</a></li>
+                        <li><a href="../pages/comics.html">Cómics</a></li>
+                        <li><a href="../pages/posters.html">Pósters</a></li>
+                        <li><a href="../pages/cuadros.html">Cuadros</a></li>
+                        <li><a href="../pages/prints.html">Prints</a></li>
+                    </ul>
+                    <!-- end nav desplegable -->
+                </li>
+
+                <li><a href="../pages/artistas.html">Artistas</a></li>
+                <li><a href="../pages/acercaDe.html">Acerca de</a></li>
+                <li><a href="../pages/faqs.html">Preguntas frecuentes</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>  
+        
+        <main>   
+            <article id="encabezadoFaq">
+                <h2>PREGUNTAS FRECUENTES</h2> 
+                <p>Las respuestas que buscas</p>
+            </article>
+
+            <article>
+                <h3>¿CÓMO SE REALIZA EL PAGO DE LA COMPRA?</h3>
+                <p>Los métodos de pago son los siguientes:</p>
+                <p>Tarjeta de crédito VISA, MasterCard o American Express, a través de la pasarela Redsys, garantizando un pago seguro</p>
+                <p>Paypal</p>
+                <p>Métodos alternativos de pago al artista vendedor. Si esta opción está disponible, le saldrá al tramitar su compra.</p>
+            </article>
+
+            <article>
+                <h3>¿CÓMO SE REALIZAN LOS ENVÍOS?</h3>
+                <p>Actualmente realizamos envíos a toda la penísula ibérica a través de Correos como envío certificado con tiempo de llegada de 3-5 días laborables.</p>
+                <p>Tarjeta de crédito VISA, MasterCard o American Express, a través de la pasarela Redsys, garantizando un pago seguro</p>
+                <p>En las Islas Canarias, el envío se realizará de 7-10 días laborables</p>
+            </article>
+
+            <article>
+                <h3>¿CUÁL ES LA POLÍTICA DE DEVOLUCIÓN?</h3>
+                <p>Dispone de 30 días laborables desde la llegada de su pedido para realizar una devolución completamente gratuita.</p>
+                <p>En caso de algún problema en su envío, póngase en contacto con nosotros y le enviaremos un nuevo artículo sin ningún coste adicional. </p>
+            </article>
+        </main>        
+
+        <footer>
+            <section id="logoFooter">
+                <img src="../images/logoFoot.png" alt="imagen logo Artistobra">
+                <h4>Artistobra</h4>
+            </section>
+           
+            <form action="" id="suscripcion">
+                <label class="suscribete" for="">Suscríbete para recibir novedades de nuestros productos</label>
+                <input type="email" name="mail" id="inputMail" placeholder = "P. ej., ejemplo@email.com">
+                <input class="buttons" type="submit" name="" value="Enviar">
+            </form>
+            
+            <section id="redesSociales">
+                <a href="#"><img src="../images/facebook.png" /></a>
+                <a href="#"><img src="../images/twitter.png" /></a>
+                <a href="#"><img src="../images/instagram.png" /></a>
+                <a href="#"><img src="../images/tiktok.png" /></a>
+            </section>
+            <p>©2022 por Artistobra</p>
+        </footer>
+    </body>
+</html>

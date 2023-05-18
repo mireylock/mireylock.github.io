@@ -9,16 +9,16 @@
 /*** PROPIEDADES COMUNES ***/
 /***************************/
 /* CENTRAR SECCIONES LÓGICAS*/
-#bienvenida, #tienda, #artistas,  #sobre, #footer {
+#header, main, #footer {
     text-align: center;
 }
 
 /* FONDOS DE SECCIONES LÓGOCAS */
-#bienvenida, #artistas, #sobre {
+.fondoBlanco {
     background-color: white;
 }
 
-nav, #tienda, footer {
+nav, .fondoRosa, footer {
     background-color: #edb2c2;
 }
 
@@ -88,8 +88,7 @@ h4 {
     font-size: 20px;
 }
 
-p
-{
+p, label {
     font-family: questrial;
     color: #000000;
 }
@@ -126,10 +125,14 @@ header img {
 }
 
 /* Barra de búsqueda */
-#headerDer input[type=text] {
+input[type=search] {
     padding: 6px;
     margin-right: 16px;
     font-size: 17px;
+}
+
+input[type=search]:focus {
+    outline: none;
 }
 
 /**************************************/
@@ -231,9 +234,74 @@ nav ul li:hover > ul li:hover a {
 /**************************************/
 /************** TIENDA ****************/
 /**************************************/
-#tienda img {
-    width: 70%;
+
+/*SOLUCIÓN 2: 
+scale-down con un width, se quedan hermosas en el responsive pero están mal en la altura siempre
+#tienda section {
+    margin: 0 15%;
+    background-color: #ffff;
 }
+
+#tienda article {
+    width: 20%;
+    margin: 1%;
+    display: inline-block;
+    border: 2px solid #c7c7c7;
+}
+
+#tienda article img {
+    width: 80%;
+    object-fit: scale-down;   
+}
+
+#esqueleto {
+    width: 100%;
+    object-fit: scale-down;
+}
+
+#tienda p:last-child {
+    margin-bottom: 1%;
+}
+
+*************************/
+
+/*SOLUCIÓN 1:
+Misma altura pero 29843954 media queries para cambiar el tamaño de imagen y que no se salga de article
+scale-down no sirve con height
+*****************************/
+
+#tienda section {
+    margin: 0 15%;
+    background-color: #ffff;
+}
+
+#tienda article {
+    width: 20%;
+    margin: 1%;
+    display: inline-block;
+    border: 2px solid #c7c7c7;
+}
+
+#tienda article img {
+    height: 300px; 
+}
+
+/* Para img hover: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity */
+
+.scaleDown {
+    width: 100%;
+    object-fit: scale-down;
+}
+
+#tienda p {
+    line-height: 150%;
+    font-size: 20px;
+}
+#tienda p:last-child {
+    margin-bottom: 10%;
+    color: gray;
+}
+
 
 /**************************************/
 /************ ARTISTAS ****************/
@@ -318,15 +386,6 @@ footer {
     text-align: center;
 }
 
-#formulario {
-    width: 800px;
-    padding: 2% 0;
-}
-
-#logoFooter {
-    padding: 2%;
-}
-
 #logoFooter img {
     width: 60px;
     height: auto;
@@ -336,6 +395,51 @@ footer {
 #logoFooter img, h4 {
     display: inline;
 }
+
+/**** FORMULARIO SUSCRIPCIÓN ****/
+form {
+    margin: 2% 30%;
+    padding: 3%;
+    background-color: #6a1a2f;
+}
+
+.suscribete {
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffff;
+}
+
+#suscripcion input {
+    width: 50%;
+    padding: 2%;
+    background-color: #78293e;
+    color: #c19ca6;
+    border: none;
+    margin-top: 3%;
+}
+
+#suscripcion input:focus {
+    background-color: #ffff;
+    color:#6a1a2f;
+    outline: none;
+}
+
+#suscripcion .buttons {
+    width: 16%;
+    background: #bf778a;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+#suscripcion .buttons:hover {
+    background-color: #ffff;
+    color:#6a1a2f;
+    outline: none;
+}
+
+/***************/
 
 #redesSociales img {
     width: 50px;
@@ -378,7 +482,7 @@ footer p {
     #sobreTexto, #sobre img  {
         float: none;
         width: 100%;
-        display: inline-block;
+        display: block;
     }
 
     #sobre img {
@@ -438,7 +542,7 @@ footer p {
 
     nav {
         padding: 1% 1%;
-        height: 100px;     
+        height: 100px;  
     }
 
     nav ul{
@@ -463,11 +567,6 @@ footer p {
 
     nav ul li a{
         font-size: 20px;
-    }
-
-    nav ul li a.active {
-        color: #6a1a2f;
-        background-color: white;
     }
 
     #check:checked ~ ul{
@@ -572,5 +671,69 @@ footer p {
 
     nav ul li a{
         font-size: 13px;
+    }
+}
+
+
+
+/*TIENDA*/
+@media screen and (max-width:1750px){
+    #tienda article img {
+        border:1px solid red;
+        height: 190px;
+    }
+
+}
+
+@media screen and (max-width:1200px){
+    #tienda article img {
+        border:1px solid blue;
+        height: 150px;
+    }
+
+    #tienda article p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:900px){
+    #tienda article img {
+        border:1px solid green;
+        height: 100px;
+    }
+
+    #tienda article p {
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    #tienda article img {
+        border:1px solid pink;
+        height: 50px;
+    }
+
+    #tienda article p {
+        font-size: 5px;
+    } 
+}
+
+/*FORMULARIO SUSCRIPCIÓN*/
+@media screen and (max-width:1455px){
+  
+
+    #suscripcion label {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:1170px){
+  
+    #suscripcion {
+        border: 5px solid red;
+    }
+    #suscripcion label {
+        font-size: 11px;
     }
 }
