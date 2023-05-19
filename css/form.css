@@ -29,16 +29,16 @@ body {
 }
 
 /***** HEADER ****/
-header {
+#headerForm {
     padding: 5vh;
 }
 
-header a, img {
+#headerForm a, #headerForm img {
     display: inline;
 }
 
 
-header a {
+#headerForm a {
     font-family: cinzelDecorative;
     text-transform: uppercase;
     font-size: 20px;
@@ -46,7 +46,7 @@ header a {
     color: #000;
 }
 
-img {
+#headerForm img {
     vertical-align: middle;
     width: 70px;
 }
@@ -91,7 +91,7 @@ img {
 }
 
 
-/* Aspa o check según si son válidos email y/o contraseña o no*/
+/* Check o aspa según si son válidos email y/o contraseña o no*/
 #password:focus, #email:focus {
     background-image: url(../images/cross.png);
     background-size: 20px 20px;

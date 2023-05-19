@@ -114,6 +114,7 @@ header {
 
 #logoHeader, #headerDer {
     display: inline-block;
+
 }
 
 header img {
@@ -124,9 +125,12 @@ header img {
     display: inline;
 }
 
-
 #headerDer {
     float: right;
+}
+
+.headerImg {
+    width: 40px;
 }
 
 /* Barra de búsqueda */
@@ -399,19 +403,19 @@ footer {
 
 #logoFooter img, h4 {
     display: inline;
+    margin: 3% 0;
 }
 
 /**** FORMULARIO SUSCRIPCIÓN ****/
 form {
-    margin: 2% 30%;
+    margin: 0 30%;
     padding: 3%;
     background-color: #6a1a2f;
 }
 
-.suscribete {
+#suscripcion label {
     width: 100%;
     font-size: 18px;
-    font-weight: bold;
     color: #ffff;
 }
 
@@ -419,22 +423,29 @@ form {
     width: 50%;
     padding: 2%;
     background-color: #78293e;
-    color: #c19ca6;
+    color: #b66d80;
     border: none;
     margin-top: 3%;
 }
 
+#suscripcion input::placeholder {
+    color: #c097a2;
+}
+
 #suscripcion input:focus {
     background-color: #ffff;
-    color:#6a1a2f;
     outline: none;
+}
+
+#suscripcion input:focus::placeholder {
+    color:#6a1a2f;
 }
 
 #suscripcion .buttons {
     width: 16%;
     background: #bf778a;
     border: none;
-    color: white;
+    color: #ffff;
     font-weight: bold;
 }
 
@@ -442,6 +453,22 @@ form {
     background-color: #ffff;
     color:#6a1a2f;
     outline: none;
+}
+
+
+/* Check o aspa según si el email es válido o no*/
+#email:focus {
+    background-image: url(../images/cross.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+#email:valid {
+    background-image: url(../images/checked.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
 }
 
 /***************/
@@ -514,6 +541,7 @@ footer p {
 
     #logoHeader, #headerDer {
         display: block;
+
     }
 
     #logoHeader img {
@@ -600,17 +628,12 @@ footer p {
     #sobre p {
         font-size: 13px;
     }
-
-    /* reduce el formulario porque de momento es una foto */
-    #formulario {
-        width: 300px;
-    }
 }
 
 /* Redimensiona la página para anchura de móvil */
 @media screen and (max-width:700px){
     header {
-        height: 110px;
+        height: 130px;
     }
 
     #logoHeader img {
@@ -627,7 +650,7 @@ footer p {
     }
 
     #headerDer img {
-        width: 50px;
+        width: 30px;
     }
 
     nav {

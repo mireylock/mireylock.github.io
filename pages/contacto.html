@@ -75,16 +75,16 @@
         </main>        
 
         <footer>
+            <form id="suscripcion" novalidate>
+                <label class="suscribete" for="">Suscríbete para recibir novedades de nuestros productos</label>
+                <input type="email" name="mail" id="email" placeholder = "P. ej., ejemplo@email.com" pattern="[a-zA-Z]+@[a-zA-Z]*\.[a-zA-Z]+" required>
+                <input class="buttons" type="submit" name="" value="Enviar" onclick="validar();return false;">
+            </form>
+            
             <section id="logoFooter">
-                <img src="../images/logoFoot.png" alt="imagen logo Artistobra">
+                <img src="../images/logo.png" alt="imagen logo Artistobra">
                 <h4>Artistobra</h4>
             </section>
-           
-            <form action="" id="suscripcion">
-                <label class="suscribete" for="">Suscríbete para recibir novedades de nuestros productos</label>
-                <input type="email" name="mail" id="inputMail" placeholder = "P. ej., ejemplo@email.com">
-                <input class="buttons" type="submit" name="" value="Enviar">
-            </form>
             
             <section id="redesSociales">
                 <a href="#"><img src="../images/facebook.png" /></a>
@@ -94,5 +94,8 @@
             </section>
             <p>©2022 por Artistobra</p>
         </footer>
+
+        <script type="text/javascript" src="../js/sweetalert2.js"></script>
+        <script type="text/javascript" src="../js/suscripcion.js"></script>
     </body>
 </html>

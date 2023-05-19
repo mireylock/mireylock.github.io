@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -52,51 +52,52 @@
             </ul>
         </nav>  
     
-    <main>
+        <main>
 
-        <h2>Recopilación de Información</h2>
-        <p>Al utilizar nuestra tienda en línea, podemos recopilar su nombre, dirección de correo electrónico, dirección física, número de teléfono y otra información relevante para procesar su pedido y proporcionar un servicio de atención al cliente eficaz.</p>
-        
-        <p>También podemos recopilar información sobre su visita a nuestro sitio web, incluyendo el tipo de navegador que utiliza, la dirección IP de su ordenador, la página web que visitó antes de llegar a nuestro sitio web y las páginas que visita en nuestro sitio web.</p>
-        
-        <h2>Uso de la Información</h2>
-        <p>Utilizamos la información personal que recopilamos para procesar sus pedidos y proporcionar un servicio de atención al cliente eficaz. También podemos utilizar su información para enviarle información sobre ofertas y promociones especiales, a menos que nos indique lo contrario.</p>
-        
-        <h2>Compartición de Información</h2>
-        <p>No compartimos su información personal con terceros, excepto cuando sea necesario para procesar su pedido o si estamos obligados por ley a hacerlo. Además, podemos compartir información no personal, como estadísticas de tráfico del sitio web, con terceros para mejorar nuestro sitio web y nuestros servicios.</p>
+            <h2>Recopilación de Información</h2>
+            <p>Al utilizar nuestra tienda en línea, podemos recopilar su nombre, dirección de correo electrónico, dirección física, número de teléfono y otra información relevante para procesar su pedido y proporcionar un servicio de atención al cliente eficaz.</p>
+            
+            <p>También podemos recopilar información sobre su visita a nuestro sitio web, incluyendo el tipo de navegador que utiliza, la dirección IP de su ordenador, la página web que visitó antes de llegar a nuestro sitio web y las páginas que visita en nuestro sitio web.</p>
+            
+            <h2>Uso de la Información</h2>
+            <p>Utilizamos la información personal que recopilamos para procesar sus pedidos y proporcionar un servicio de atención al cliente eficaz. También podemos utilizar su información para enviarle información sobre ofertas y promociones especiales, a menos que nos indique lo contrario.</p>
+            
+            <h2>Compartición de Información</h2>
+            <p>No compartimos su información personal con terceros, excepto cuando sea necesario para procesar su pedido o si estamos obligados por ley a hacerlo. Además, podemos compartir información no personal, como estadísticas de tráfico del sitio web, con terceros para mejorar nuestro sitio web y nuestros servicios.</p>
 
-        <h2>Protección de la Información</h2>
-        <p>Tomamos medidas para proteger la información personal que recopilamos contra el acceso no autorizado, la alteración, la divulgación o la destrucción. Utilizamos medidas de seguridad físicas, electrónicas y administrativas para proteger su información personal.</p>
-        
-        <h2>Acceso y Actualización de la Información</h2>
-        <p>Usted puede acceder y actualizar la información personal que nos proporcionó en cualquier momento. Para hacerlo, inicie sesión en su cuenta en nuestro sitio web y edite su información de perfil.</p>
+            <h2>Protección de la Información</h2>
+            <p>Tomamos medidas para proteger la información personal que recopilamos contra el acceso no autorizado, la alteración, la divulgación o la destrucción. Utilizamos medidas de seguridad físicas, electrónicas y administrativas para proteger su información personal.</p>
+            
+            <h2>Acceso y Actualización de la Información</h2>
+            <p>Usted puede acceder y actualizar la información personal que nos proporcionó en cualquier momento. Para hacerlo, inicie sesión en su cuenta en nuestro sitio web y edite su información de perfil.</p>
 
-        <h2>Cambios en la Política de Privacidad</h2>
-        <p>Nos reservamos el derecho de cambiar esta política de privacidad en cualquier momento. Le notificaremos de cualquier cambio material en la política de privacidad publicando una notificación en nuestro sitio web. Le recomendamos que revise periódicamente esta política de privacidad para estar informado de cualquier cambio.</p>
-    
-    </main>
-    
-    <footer>
-        <section id="logoFooter">
-            <img src="../images/logoFoot.png" alt="imagen logo Artistobra">
-            <h4>Artistobra</h4>
-        </section>
+            <h2>Cambios en la Política de Privacidad</h2>
+            <p>Nos reservamos el derecho de cambiar esta política de privacidad en cualquier momento. Le notificaremos de cualquier cambio material en la política de privacidad publicando una notificación en nuestro sitio web. Le recomendamos que revise periódicamente esta política de privacidad para estar informado de cualquier cambio.</p>
         
-        <form action="" id="suscripcion">
-            <label class="suscribete" for="">Suscríbete para recibir novedades de nuestros productos</label>
-            <input type="email" name="mail" id="inputMail" placeholder = "P. ej., email@ejemplo.com">
-            <input class="buttons" type="submit" name="" value="Enviar">
-        </form>
+        </main>
         
-        <section id="redesSociales">
-            <a href="#"><img src="../images/facebook.png" /></a>
-            <a href="#"><img src="../images/twitter.png" /></a>
-            <a href="#"><img src="../images/instagram.png" /></a>
-            <a href="#"><img src="../images/tiktok.png" /></a>
-        </section>
-        
-        <p>©2022 por Artistobra</p>
-    </footer>
-    
-</body>
+        <footer>
+            <form id="suscripcion" novalidate>
+                <label class="suscribete" for="">Suscríbete para recibir novedades de nuestros productos</label>
+                <input type="email" name="mail" id="email" placeholder = "P. ej., ejemplo@email.com" pattern="[a-zA-Z]+@[a-zA-Z]*\.[a-zA-Z]+" required>
+                <input class="buttons" type="submit" name="" value="Enviar" onclick="validar();return false;">
+            </form>
+            
+            <section id="logoFooter">
+                <img src="../images/logo.png" alt="imagen logo Artistobra">
+                <h4>Artistobra</h4>
+            </section>
+            
+            <section id="redesSociales">
+                <a href="#"><img src="../images/facebook.png" /></a>
+                <a href="#"><img src="../images/twitter.png" /></a>
+                <a href="#"><img src="../images/instagram.png" /></a>
+                <a href="#"><img src="../images/tiktok.png" /></a>
+            </section>
+            <p>©2022 por Artistobra</p>
+        </footer>
+
+        <script type="text/javascript" src="../js/sweetalert2.js"></script>
+        <script type="text/javascript" src="../js/suscripcion.js"></script>
+    </body>
 </html>

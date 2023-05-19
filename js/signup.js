@@ -62,7 +62,7 @@ function validar() {
         Swal.fire({
             icon: 'error',
             title: 'Error!',
-            text: 'Por favor, acepte la Política de Privacidad',
+            text: 'Acepte la Política de Privacidad',
             confirmButtonText: 'Aceptar'
         })
     } 
