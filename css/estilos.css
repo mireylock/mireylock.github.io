@@ -243,42 +243,6 @@ nav ul li:hover > ul li:hover a {
 /**************************************/
 /************** TIENDA ****************/
 /**************************************/
-
-/*SOLUCIÓN 2: 
-scale-down con un width, se quedan hermosas en el responsive pero están mal en la altura siempre
-#tienda section {
-    margin: 0 15%;
-    background-color: #ffff;
-}
-
-#tienda article {
-    width: 20%;
-    margin: 1%;
-    display: inline-block;
-    border: 2px solid #c7c7c7;
-}
-
-#tienda article img {
-    width: 80%;
-    object-fit: scale-down;   
-}
-
-#esqueleto {
-    width: 100%;
-    object-fit: scale-down;
-}
-
-#tienda p:last-child {
-    margin-bottom: 1%;
-}
-
-*************************/
-
-/*SOLUCIÓN 1:
-Misma altura pero 29843954 media queries para cambiar el tamaño de imagen y que no se salga de article
-scale-down no sirve con height
-*****************************/
-
 #tienda section {
     margin: 0 15%;
     background-color: #ffff;
@@ -633,7 +597,7 @@ footer p {
 /* Redimensiona la página para anchura de móvil */
 @media screen and (max-width:700px){
     header {
-        height: 130px;
+        height: 110px;
     }
 
     #logoHeader img {
@@ -644,7 +608,7 @@ footer p {
         font-size: 25px;
     }
 
-    #headerDer input[type=text] {
+    #headerDer input[type=search] {
         padding: 6px;
         font-size: 10px;
     }
@@ -702,12 +666,9 @@ footer p {
     }
 }
 
-
-
 /*TIENDA*/
 @media screen and (max-width:1750px){
     #tienda article img {
-        border:1px solid red;
         height: 190px;
     }
 
@@ -715,7 +676,6 @@ footer p {
 
 @media screen and (max-width:1200px){
     #tienda article img {
-        border:1px solid blue;
         height: 150px;
     }
 
@@ -726,7 +686,6 @@ footer p {
 
 @media screen and (max-width:900px){
     #tienda article img {
-        border:1px solid green;
         height: 100px;
     }
 
@@ -749,19 +708,45 @@ footer p {
 
 /*FORMULARIO SUSCRIPCIÓN*/
 @media screen and (max-width:1455px){
-  
 
-    #suscripcion label {
-        font-size: 14px;
+    #suscripcion {
+        margin: 0 25%;
     }
 }
 
 @media screen and (max-width:1170px){
   
     #suscripcion {
-        border: 5px solid red;
+        margin: 0 15%;
+
     }
+    
+}
+
+@media screen and (max-width:900px){
+  
+    #suscripcion {
+        margin: 0 10%;
+    }
+
     #suscripcion label {
-        font-size: 11px;
+        font-size: 14px;
     }
+}
+
+@media screen and (max-width:600px){
+    #suscripcion label {
+        font-size: 10px;
+    }
+
+    #suscripcion input {
+        width: 180px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .buttons {
+        font-size: 10px;
+    }
+    
 }

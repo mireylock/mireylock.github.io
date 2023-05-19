@@ -15,8 +15,14 @@ article img {
     width: 100%;
     display: block;
 }
-/* main {
-    background-image: url(../images/contacto.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-} */
+
+@media screen and (max-width:700px){
+    h3 {
+        font-size: 15px;
+    }
+    p {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
+

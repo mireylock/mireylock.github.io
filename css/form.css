@@ -132,12 +132,10 @@ span {
     line-height: 3em;
 }
 
-
 .form a:hover {
     text-decoration: underline;
     color: #bf778a;
 }
-
 
 input[type="checkbox"] {
     width: 20px;
@@ -191,4 +189,27 @@ small {
     font-family: questrial;
 }
 
+/*** RESPONSIVE ***/
+@media screen and (max-width:700px){
+    .form {
+        width: 300px ;
+    }
+
+    .form label, .form a {
+        font-size: 12px;
+        line-height: 2em;
+    }
+
+    #password-message, #email-message {
+        font-size: 12px;
+    }
+
+    input[type="checkbox"] {
+        height: 12px;
+    }
+    
+    p {
+        margin: 7%;
+    }
+}
 

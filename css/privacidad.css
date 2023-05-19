@@ -19,3 +19,15 @@ h2 {
 main p {
     padding: 0 20%;
 }
+
+@media (max-width: 1005px){
+    h2 {
+        font-size: 15px;
+        padding: 0 10%;
+        padding: 3% 10%;
+    }
+
+    main p {
+        padding: 0 10%;
+    }
+}
