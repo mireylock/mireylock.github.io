@@ -1,0 +1,22 @@
+h3{
+    padding-bottom: 0;
+    font-size: 25px;
+}
+
+p {
+    padding-bottom: 4vh;
+}
+
+#redesSociales {
+    margin-bottom: 3%;
+}
+
+article img {
+    width: 100%;
+    display: block;
+}
+/* main {
+    background-image: url(../images/contacto.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+} */

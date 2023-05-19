@@ -54,6 +54,7 @@ img {
 /****** FORMULARIO *******/
 .form {
     width: 400px;
+    /* width: 40vh; */
     height: auto;
     background: #6a1a2f;
     box-shadow: 7px 13px 37px #000;

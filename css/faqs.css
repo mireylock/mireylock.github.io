@@ -1,3 +1,40 @@
 #encabezadoFaq {
     background-image:url(../images/preguntas_frecuentes.png);
+    background-position: center;
+    height: 50%;
+    margin:0;
 }
+
+#encabezadoFaq h2, #encabezadoFaq h3 {
+    color: #ffff;
+}
+
+#encabezadoFaq h2 {
+    padding-bottom: 1vh;
+
+}
+
+article {
+    margin: 3% 30%;
+}
+
+article h3 {
+    font-size: 20px;
+}
+
+article h4 {
+    font-family: julee;
+
+}
+
+article ul {
+    list-style-type: disc;
+    text-align: left;
+    font-size: 15px;
+    font-family: questrial;
+}
+
+article p {
+    margin: 2% 0;
+}
+
