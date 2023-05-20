@@ -6,7 +6,6 @@ function validar() {
     var pass = document.getElementById("password").value;
     var pass1 = document.getElementById("pass2").value;
     var aceptaPrivacidad = document.getElementById('private-policy').checked;
-
   
     //Comprobar que los formatos de email y contraseña son correctos
     var regexMail = /[a-zA-Z]+@[a-zA-Z]*\.[a-zA-Z]+/; 
@@ -86,4 +85,9 @@ function validar() {
             text: dataStr,
         })
     }
+    var formulario = document.getElementById("form");
+    var botonEnvio = document.getElementById("submit-button");
+
+
 }
+

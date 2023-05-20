@@ -15,7 +15,7 @@
 
 /* FONDOS DE SECCIONES LÓGOCAS */
 .fondoBlanco {
-    background-color: white;
+    background-color: #ffffff;
 }
 
 nav, .fondoRosa, footer {
@@ -173,7 +173,7 @@ nav ul li {
 /* enlaces del nav */
 nav ul a {
     display: block;
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 10px 15px;
 }
@@ -181,7 +181,7 @@ nav ul a {
 /* efecto al pasar el ratón */
 nav ul li:hover {
     border: 1px solid #6a1a2f;
-    background: white;
+    background: #ffffff;
 }
 
 nav ul li:hover a {
@@ -210,7 +210,7 @@ nav ul li:hover > ul {
 
 /* enlaces de los items del nav desplegable */
 nav ul li:hover > ul a {
-    color:white;
+    color:#ffffff;
 }
 
 /* efecto al pasar el ratón por los ítems del nav desplegable */
@@ -310,7 +310,7 @@ nav ul li:hover > ul li:hover a {
     line-height: 30px;
     padding: 5%;
     font-size: 15px;
-    background-color: white;
+    background-color: #ffffff;
 }
 
 /* formateo de texto de la descripción de cada artista */
@@ -396,7 +396,7 @@ form {
     color: #c097a2;
 }
 
-#suscripcion input:focus {
+#suscripcion #email:focus {
     background-color: #ffff;
     outline: none;
 }
@@ -435,13 +435,14 @@ form {
     background-position: right 10px center;
 }
 
-/***************/
+/**** REDES SOCIALES ****/
 
 #redesSociales img {
     width: 50px;
     height: 50px;
     display: inline-block;
 }
+
 
 footer p {
     padding: 3%;
@@ -706,7 +707,7 @@ footer p {
     } 
 }
 
-/*FORMULARIO SUSCRIPCIÓN*/
+/* FORMULARIO SUSCRIPCIÓN */
 @media screen and (max-width:1455px){
 
     #suscripcion {
