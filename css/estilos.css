@@ -445,7 +445,7 @@ form {
 
 
 footer p {
-    padding: 3%;
+    padding: 5%;
 }
 
 /**************************************/
@@ -685,54 +685,69 @@ footer p {
     }
 }
 
-@media screen and (max-width:900px){
+
+@media screen and (max-width:850px){
+
+    #tienda section {
+        width: 70%;
+    }
+    
+    
     #tienda article img {
-        height: 100px;
+        height: 200px;
+    }
+
+
+
+    #tienda article {
+        display: inline-block;
+        width: 200px;
+        margin: 5% 0;
+
     }
 
     #tienda article p {
-        font-size: 10px;
-    }
-
-}
-
-@media screen and (max-width:600px){
-    #tienda article img {
-        border:1px solid pink;
-        height: 50px;
-    }
-
-    #tienda article p {
-        font-size: 5px;
+        font-size: 15px;
     } 
 }
 
 /* FORMULARIO SUSCRIPCIÓN */
-@media screen and (max-width:1455px){
-
-    #suscripcion {
-        margin: 0 25%;
-    }
-}
-
 @media screen and (max-width:1170px){
   
     #suscripcion {
         margin: 0 15%;
-
     }
     
 }
 
-@media screen and (max-width:900px){
-  
-    #suscripcion {
-        margin: 0 10%;
-    }
+@media screen and (max-width:1455px){
 
+    #suscripcion {
+        margin: 0 15%;
+    }
+}
+
+@media screen and (max-width:850px){
+    
     #suscripcion label {
         font-size: 14px;
     }
+}
+
+@media screen and (max-width:630px){
+    
+    #suscripcion {
+        margin: 0 6%;
+    }
+
+    #suscripcion label {
+        font-size: 12px;
+    }
+
+    #suscripcion input {
+        margin-top: 5%;
+    }
+
 }
 
 @media screen and (max-width:600px){
@@ -741,13 +756,12 @@ footer p {
     }
 
     #suscripcion input {
-        width: 180px;
-        height: 20px;
-        font-size: 10px;
+ 
+        font-size: 9px;
     }
 
-    .buttons {
-        font-size: 10px;
+    #suscripcion .buttons {
+        font-size: 9px;
     }
     
 }
