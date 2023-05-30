@@ -197,14 +197,8 @@ small {
         width: 300px ;
     }
 
-    .controls, .button {
-        font-size: 11px;
-    }
-
- 
-
     .form label, .form a {
-        font-size: 10px;
+        font-size: 12px;
         line-height: 2em;
     }
 

@@ -259,8 +259,6 @@ nav ul li:hover > ul li:hover a {
     height: 300px; 
 }
 
-/* Para img hover: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity */
-
 .scaleDown {
     width: 100%;
     object-fit: scale-down;
@@ -436,7 +434,6 @@ form {
 }
 
 /**** REDES SOCIALES ****/
-
 #redesSociales img {
     width: 50px;
     height: 50px;
@@ -445,7 +442,7 @@ form {
 
 
 footer p {
-    padding: 5%;
+    padding: 3%;
 }
 
 /**************************************/
@@ -667,7 +664,7 @@ footer p {
     }
 }
 
-/*TIENDA*/
+/* TIENDA */
 @media screen and (max-width:1750px){
     #tienda article img {
         height: 190px;
@@ -685,69 +682,54 @@ footer p {
     }
 }
 
-
-@media screen and (max-width:850px){
-
-    #tienda section {
-        width: 70%;
-    }
-    
-    
+@media screen and (max-width:900px){
     #tienda article img {
-        height: 200px;
-    }
-
-
-
-    #tienda article {
-        display: inline-block;
-        width: 200px;
-        margin: 5% 0;
-
+        height: 100px;
     }
 
     #tienda article p {
-        font-size: 15px;
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    #tienda article img {
+        border:1px solid pink;
+        height: 50px;
+    }
+
+    #tienda article p {
+        font-size: 5px;
     } 
 }
 
 /* FORMULARIO SUSCRIPCIÓN */
+@media screen and (max-width:1455px){
+
+    #suscripcion {
+        margin: 0 25%;
+    }
+}
+
 @media screen and (max-width:1170px){
   
     #suscripcion {
         margin: 0 15%;
+
     }
     
 }
 
-@media screen and (max-width:1455px){
-
+@media screen and (max-width:900px){
+  
     #suscripcion {
-        margin: 0 15%;
+        margin: 0 10%;
     }
-}
 
-@media screen and (max-width:850px){
-    
     #suscripcion label {
         font-size: 14px;
     }
-}
-
-@media screen and (max-width:630px){
-    
-    #suscripcion {
-        margin: 0 6%;
-    }
-
-    #suscripcion label {
-        font-size: 12px;
-    }
-
-    #suscripcion input {
-        margin-top: 5%;
-    }
-
 }
 
 @media screen and (max-width:600px){
@@ -756,12 +738,13 @@ footer p {
     }
 
     #suscripcion input {
- 
-        font-size: 9px;
+        width: 180px;
+        height: 20px;
+        font-size: 10px;
     }
 
-    #suscripcion .buttons {
-        font-size: 9px;
+    .buttons {
+        font-size: 10px;
     }
     
 }
